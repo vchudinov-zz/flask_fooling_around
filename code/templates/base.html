@@ -1,0 +1,26 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <title>Exiqon IT Services Status and Announcements</title>
+</head>
+<body>
+  <ul id="navigation">
+  {% for item in navigation %}
+    <li><a href="{{ item.href }}" > {{ item.caption }}</a></li>
+  {% endfor %}
+ </ul>
+
+ <ul id="announcements">
+   {% for item in announcements %}
+     <li><a href="{{ item.href }}" > {{ item.caption }}</a></li>
+   {% endfor %}
+ </ul>
+
+<ul id ="services">
+ {% for item in navigation %}
+   <li><a href="{{ item.href }}" > {{ item.caption }}</a></li>
+ {% endfor %}
+ </ul>
+
+ </body>
+ </html>
